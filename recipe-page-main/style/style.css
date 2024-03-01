@@ -1,10 +1,12 @@
 @font-face {
   font-family: 'Young Serif';
   src: url(/recipe-page-main/assets/fonts/young-serif/YoungSerif-Regular.ttf);
+  weights: 400;
 }
 @font-face {
   font-family: 'Outfit';
   src: url(/recipe-page-main/assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+  weights: 400, 600, 700;
 }
 * {
   padding: 0;
@@ -14,19 +16,71 @@
 body {
   background-color: hsl(30, 54%, 90%);
   padding: 50px 0px;
+  font-size: 1rem;
 }
 img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 8px;
+}
+.main__para {
+  font-family: 'Outfit';
+  padding-bottom: 15px;
+  line-height:1.5;
 }
 main {
   max-width: 700px;
   margin: 0 auto;
   background-color: #fff;
   padding: 30px;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 .main__heading {
-  padding: 10px 0;
+  padding: 30px 0;
+  font-size: 2.25rem;
+  font-family: 'Young Serif';
+}
+.preparation__time {
   font-family: 'Outfit';
+  background: hsl(330, 100%, 98%);
+  padding: 30px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+.preparation__time h3{
+  color:hsl(14, 45%, 36%);
+  padding-bottom: 10px;
+}
+.preparation__time ul {
+  padding-left: 20px;
+  
+}
+.preparation__time ul li{
+  line-height:3;
+  padding-left: 25px;
+}
+@media screen and (max-width: 375px) {
+  body {
+    padding: 0px;
+  }
+  main {
+    max-width: 100%;
+    margin: 0px;
+    background-color: #fff;
+    padding: 0px;
+    border-radius: 0px;
+  }
+  .main__heading {
+    padding: 20px 0;
+    font-size: 2.25rem;
+    line-height: 1;
+  }
+  img {
+    border-radius: 0px;
+  }
+  .main__content {
+    padding: 30px;
+  }
+  .preparation__time ul li {
+    line-height: 2.25;
+}
 }
