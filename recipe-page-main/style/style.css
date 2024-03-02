@@ -15,6 +15,8 @@
 }
 body {
   background-color: hsl(30, 54%, 90%);
+  font-family: 'Outfit';
+  line-height: 1.5;
   padding: 50px 0px;
   font-size: 1rem;
 }
@@ -22,10 +24,16 @@ img {
   width: 100%;
   border-radius: 8px;
 }
+h1,
+h2,
+h3 {
+  font-family: 'Young Serif';
+  color: hsl(14, 45%, 36%);
+}
 .main__para {
   font-family: 'Outfit';
-  padding-bottom: 15px;
-  line-height:1.5;
+  padding-bottom: 10px;
+  line-height: 1.5;
 }
 main {
   max-width: 700px;
@@ -35,7 +43,7 @@ main {
   border-radius: 20px;
 }
 .main__heading {
-  padding: 30px 0;
+  padding: 20px 0;
   font-size: 2.25rem;
   font-family: 'Young Serif';
 }
@@ -46,17 +54,68 @@ main {
   margin: 20px 0;
   border-radius: 8px;
 }
-.preparation__time h3{
-  color:hsl(14, 45%, 36%);
+.preparation__time h3 {
+  color: hsl(14, 45%, 36%);
   padding-bottom: 10px;
 }
 .preparation__time ul {
   padding-left: 20px;
-  
 }
-.preparation__time ul li{
-  line-height:3;
+.preparation__time ul li {
+  line-height: 3;
+  padding-left: 20px;
+}
+.order__list {
+  padding-left: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+.order__list li {
   padding-left: 25px;
+  margin-bottom: 8px;
+}
+.ingredients__list {
+  padding-left: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+.order__list li::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+.weight {
+  font-weight: 600;
+  color: hsl(14, 45%, 36%);
+}
+.ingredients__title {
+  color: hsl(14, 45%, 36%);
+  padding: 15px 0;
+}
+.instructions__title,
+.nutrition__title {
+  padding: 15px 0;
+}
+.nutrition__text {
+  padding-bottom: 15px;
+}
+.ingredients__list li {
+  line-height: 2.5;
+  padding-left: 25px;
+}
+.nutrition__table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.nutrition__table tr {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  line-height: 3;
+}
+.nutrition__table td {
+  padding-left: 30px;
+}
+.nutrition__table td:nth-child(2) {
+  color: hsl(14, 45%, 36%);
+  font-weight: 600;
 }
 @media screen and (max-width: 375px) {
   body {
@@ -72,7 +131,7 @@ main {
   .main__heading {
     padding: 20px 0;
     font-size: 2.25rem;
-    line-height: 1;
+    line-height: 1.25;
   }
   img {
     border-radius: 0px;
@@ -82,5 +141,12 @@ main {
   }
   .preparation__time ul li {
     line-height: 2.25;
+  }
+  .ingredients__list li {
+    line-height: 2;
+    padding-left: 20px;
+  }
+  .order__list li {
+    padding-left: 20px;
 }
 }
