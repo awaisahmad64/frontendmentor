@@ -1,0 +1,20 @@
+:root {
+  --primary-color: hsl(75, 94%, 57%);
+  --white-color: hsl(0, 0%, 100%);
+  --gray-color: hsl(0, 0%, 20%);
+  --dark-gray-color: hsl(0, 0%, 12%);
+  --off-black-color: hsl(0, 0%, 8%);
+}
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  padding-top: 175px;
+  background-color: var(--off-black-color);
+  font-size: 0.875rem;
+  
+}
