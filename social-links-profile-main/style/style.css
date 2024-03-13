@@ -17,3 +17,8 @@ body {
   background-color: var(--off-black-color);
   font-size: 0.875rem;
 }
+img {
+  width: 100%;
+}
+@media screen and (max-width: 375px) {
+}
