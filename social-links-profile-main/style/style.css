@@ -46,6 +46,15 @@ a {
   color: var(--white-color);
   display: block;
 }
+figure {
+  width: 32px;
+  height: 32px;
+}
+.card__image {
+  width: 88px;
+  height: 88px;
+  border-radius: 88px;
+}
 img {
   width: 100%;
 }
